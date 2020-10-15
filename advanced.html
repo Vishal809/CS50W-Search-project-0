@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search | Advanced</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="header advanced_header">
+      <div id="header_logo">
+        <img src="D:\LUcky\CS50W-Search-project-0\logo.svg" alt="Logo">
+      </div>
+
+      <div class="links">
+        <a class="link" href="index.html">Google Search</a>
+      </div>
+    </div>
+
+    <p class="advanced_search_header">Advanced search</p>
+
+    <div class="divider"></div>
+
+    <div class="advanced_search_container">
+      <p>Find pages with ...</p>
+
+      <form class="advanced_search_form" action="https://google.com/search">
+        <div class="advanced_search_option">
+          <label class="advanced_search_label" for="all">all these words:</label>
+          <input class="advanced_search_input" type="text" name="as_q" id="all" autocomplete="off">
+          <div class="explanation">Type the important words: <span class="explanation_example">tri-colour rat terrier</span></div>
+        </div>
+
+        <div class="advanced_search_option">
+          <label class="advanced_search_label" for="exact">this exact word or phrase:</label>
+          <input class="advanced_search_input" type="text" name="as_epq" id="exact" autocomplete="off">
+          <span class="explanation">Put exact words in quotes: <span class="explanation_example">"rat terrier"</span></span>
+        </div>
+
+        <div class="advanced_search_option">
+          <label class="advanced_search_label" for="any">any of these words:</label>
+          <input class="advanced_search_input" type="text" name="as_oq" id="any" autocomplete="off">
+          <span class="explanation">Type OR between all the words you want: miniature OR standard</span>
+        </div>
+
+        <div class="advanced_search_option">
+          <label class="advanced_search_label" for="none">none of these words:</label>
+          <input class="advanced_search_input" type="text" name="as_eq" id="none" autocomplete="off">
+          <span class="explanation">Put a minus sign just before words that you don't want: <span class="explanation_example new_line">-rodent, -"Jack Russell"</span></span>
+        </div>
+
+        <label class="advanced_search_label"></label>
+        <div class="advanced_search_btn_container">
+          <input class="advanced_search_button" type="submit" value="Advanced Search">
+        </div>
+      </form>
+
+    </div>
+
+  </body>
+</html>
